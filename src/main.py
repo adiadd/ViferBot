@@ -1,8 +1,11 @@
+from array import array
 import discord
 import os
 from discord.ext import commands
 import random
 from dotenv import load_dotenv
+import dataa
+from arrayData import arrayImages
 #import tensorflow as tf
 
 load_dotenv() 
@@ -33,6 +36,7 @@ def validate_image(imageName):
 @client.event
 async def on_ready():
   print('We have logged in as {0.user}'.format(client))
+  print(arrayImages[1])
 
   
 #@bot.command()
@@ -47,10 +51,12 @@ async def on_message(message):
   msg = message.content
 
   if msg.startswith("$random"):
-    embed = discord.Embed(title="Guess which character this is:")
+       
+    #embed.set_image(url=random.choice(list(dataa.dictImages.items())))
+    #embed.set_image(url=random.choice(arrayImages[1]))
 
-    
-    embed.set_image(url=random.choice(list(imagesDict.items()))[1])
+    embed = discord.Embed(title="Guess which character this is:")
+    embed.set_image(url=random.choice(arrayImages))
     await message.channel.send(embed=embed)
 
 
