@@ -3,9 +3,11 @@ import os
 from discord.ext import commands
 import random
 from dotenv import load_dotenv
+import tensorflow as tf
 
 load_dotenv() 
 
+API_KEY=os.getenv('API_KEY')
 #bot = commands.Bot(command_prefix='$')
 
 client = discord.Client()
