@@ -3,7 +3,7 @@ import os
 from discord.ext import commands
 import random
 from dotenv import load_dotenv
-import tensorflow as tf
+#import tensorflow as tf
 
 load_dotenv() 
 
