@@ -10,3 +10,5 @@ You can use the '$random' command when the bot is linked to your server to send 
     - Discord.py
 - Git
 - Discord API
+
+You can find the source code [here](main.py)
