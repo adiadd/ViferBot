@@ -26,12 +26,15 @@ def validate_image(imageName):
     if imageName.lower() == the_key:
       return True
       break
-
+#TODO: randomly crop a part of the image
 # def random_crop(image):
 #  cropped_image = tf.image.random_crop(
 #      image, size=[100, 100, 3])
 
 #  return cropped_image
+
+#def crossCheck(val):
+  #if val == 
 
 @client.event
 async def on_ready():
